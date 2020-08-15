@@ -7,6 +7,21 @@
   <body>
     <h1> {{title}} </h1>
     <p>Welcome to  {{title}} </p>
+
+    <h2>Filters</h2>
+    <div class="container">
+    <label>From: </label>
+    <input type="date" name="startDate" id="startDate" value="2020-06-01">
+    <label>To: </label>
+    <input type="date" name="endDate" id="endDate" value="2020-06-30">
+    <button id="go-btn" type="submit">Update</button>
+
+    <h1>The Chart</h1>
+
+    <canvas id="myChart" width="400" height="400"></canvas>
   </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="/javascripts/financial-data.js" charset="utf-8"></script>
+  
 </html>
